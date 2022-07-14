@@ -49,7 +49,7 @@ def gen_data(num_rows: int = 10, inc_columns:List[str] = None) -> pd.DataFrame:
                 extracted_data[col] = val
             fake_data.append(extracted_data)
     out = pd.DataFrame(fake_data, columns=inc_columns)
-    out.to_csv('generated_data')
+    # out.to_csv('generated_data')
     return out
 
 if __name__ == '__main__':
