@@ -13,7 +13,7 @@ def gen_data(num_rows: int = 10, inc_columns:List[str] = None) -> pd.DataFrame:
     """
     fake = Faker()
     fake_data = []
-    if inc_columns is None:
+    if inc_columns is None or len(inc_columns) == 0:
         inc_columns = ['Name', 'Age', 'Gender', 'BirthDate', 'Latitude', 'Longitude',
                        'BMI', 'HeartRate', 'SystolicBP', 'V02', 'BloodGroup']
 
